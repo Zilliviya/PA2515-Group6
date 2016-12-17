@@ -10,15 +10,7 @@ var mx;
 var my; 
 
 var bigbutterflyBody=[];
-var smallbutterflyBody=[];
-var smallbody=[];
 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
 var canWidth;
 var canHeight;
 //Resolving the interval inconsistencies caused by function requestAnimationFrame 
@@ -29,13 +21,6 @@ var backgroundpicture=new Image();
 
 var flower;
 var pollen;
-var smallbutterfly;
-
-<<<<<<< HEAD
-var data; //Score
-=======
-
->>>>>>> origin/master
 
 document.body.onload=gm;
 function gm()//game
@@ -69,9 +54,6 @@ function init()
 	bigbutterfly=new bigbutterflyObj();
 	bigbutterfly.init();
 
-	smallbutterfly=new smallbutterflyObj();
-	smallbutterfly.init();
-
 	mx=canWidth*0.5;
 	my=canHeight*0.5;
 
@@ -82,31 +64,6 @@ function init()
 	}
 
 
-	for(var i=0;i<4;i++)
-	{
-		smallbutterflyBody[i]=new Image();
-		smallbutterflyBody[i].src="./src/smallbutterflyBody"+i+".png";
-	}
-
-<<<<<<< HEAD
-    for(var i=0;i<4;i++)
-    {
-    	smallbody[i]=new Image;
-    	smallbody.src="./src/small"+i+".png";
-    }
-    data = new dataObj();
-    ctx1.font = "40px";  //Score
-	ctx1.textAlign = "center"; //Score
-
-=======
-    for (var i = 0; i < 4; i++) {
-       
-       smallbody[i]=new Image();
-       smallbody[i].src="./src/small"+i+".png";
-
-    }
-    
->>>>>>> origin/master
 }
 function gmloop()
 {
@@ -123,40 +80,13 @@ function gmloop()
 
 	ctx1.clearRect(0,0,canWidth,canHeight);
 	bigbutterfly.draw();
-<<<<<<< HEAD
-
-	bigPollensCollision();
-
-	bigsmallcollision()
-
-	smallbutterfly.draw();
-	data.draw(); //Score
-=======
-
-	bigPollensCollision();
-
-	bigsmallcollision();
-
-	smallbutterfly.draw();
->>>>>>> origin/master
 
 }
-
 function onMouseMove(e)
 {
-<<<<<<< HEAD
-	if(!data.gameOver) {             //Score
-=======
-	
->>>>>>> origin/master
 		if(e.offSetX||e.layerX)
 		{
 			mx=e.offSetX==undefined?e.layerX:e.offSetX;
 			my=e.offSetY==undefined?e.layerY:e.offSetY;
 		}
-<<<<<<< HEAD
-	}
-=======
-	
->>>>>>> origin/master
 }
