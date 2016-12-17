@@ -4,7 +4,11 @@ var smallbutterflyObj=function()
 	this.y;
 	this.angle;
 	this.smallbutterflyBody=new Image();
+<<<<<<< HEAD
     this.smallbody=new Image();
+=======
+	this.smallbody=new Image();
+>>>>>>> origin/master
 
 	this.smallbutterflyBodyTimer=0;
 	this.smallbutterflyBodyCount=0;
@@ -28,6 +32,11 @@ var smallbutterflyObj=function()
  }
  smallbutterflyObj.prototype.draw=function()
  {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
  	this.x=lerpDistance(bigbutterfly.x,this.x,0.98);
 	this.y=lerpDistance(bigbutterfly.y,this.y,0.98);
 
@@ -52,11 +61,19 @@ var smallbutterflyObj=function()
         if (this.smallbodyCount>3) 
         {
         	this.smallbodyCount=3;
+<<<<<<< HEAD
         	//game over
         	data.gameOver = true; //Score
         }
 	 }
   
+=======
+        	
+        	//game over
+        
+	 }
+  }
+>>>>>>> origin/master
  	ctx1.save();
  	ctx1.translate(this.x,this.y);
  	ctx1.rotate(this.angle);

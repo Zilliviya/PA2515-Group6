@@ -40,6 +40,10 @@ bigbutterflyObj.prototype.draw=function()
 	 ctx1.rotate(this.angle);
 	var bigbutterflyBodyCount=this.bigbutterflyBodyCount;
 	ctx1.drawImage(bigbutterflyBody[bigbutterflyBodyCount],-bigbutterflyBody[bigbutterflyBodyCount].width*0.5,-bigbutterflyBody[bigbutterflyBodyCount] .height*0.5);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/master
 	ctx1.restore();
 }
