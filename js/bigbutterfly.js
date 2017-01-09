@@ -16,8 +16,8 @@ this.angle=0;
 }
 bigbutterflyObj.prototype.draw=function()
 {
-	this.x=lerpDistance(mx,this.x,0.91);
-	this.y=lerpDistance(my,this.y,0.91);
+	this.x=lerpDistance(mx,this.x,0.93);
+	this.y=lerpDistance(my,this.y,0.93);
 
 	//bigbutterflyBody count
 	this.bigbutterflyBodyTimer+=deltaTime;
@@ -32,14 +32,14 @@ bigbutterflyObj.prototype.draw=function()
 	var deltaX=mx-this.x;
 	var beta=Math.atan2(deltaY,deltaX)+Math.PI//-PI PI;
 
-	this.angle=lerpAngle(beta,this.angle,0.97);
+	this.angle=lerpAngle(beta,this.angle,0.99);
 
 
 	 ctx1.save();
 	 ctx1.translate(this.x,this.y);
-	 ctx1.rotate(this.angle)
+	 ctx1.rotate(this.angle);
 	var bigbutterflyBodyCount=this.bigbutterflyBodyCount;
 	ctx1.drawImage(bigbutterflyBody[bigbutterflyBodyCount],-bigbutterflyBody[bigbutterflyBodyCount].width*0.5,-bigbutterflyBody[bigbutterflyBodyCount] .height*0.5);
-
+    
 	ctx1.restore();
 }

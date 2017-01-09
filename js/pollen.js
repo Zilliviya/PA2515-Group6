@@ -71,6 +71,11 @@ pollenObj.prototype.born=function(i)
 	}
 }
 
+ pollenObj.prototype.dead=function(i)
+ {
+   this.alive[i]=false;
+ }
+
 function pollenMonitor()
 {
 	var num = 0;
